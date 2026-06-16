@@ -1,214 +1,360 @@
-# 🧠 GitHub Commit Lab (Github-Contribution-Graph-Hack)
+# 🧠 GitHub Commit Lab
 
-Create **custom patterns, text, or designs** on your GitHub contribution graph using automated commits.
+<div align="center">
 
-This project is a **Python-based script** that takes a generated `pattern.json` file and converts it into **real GitHub commits**, making your contribution graph display the desired pattern using green dots.
+<img src="assets/logo.png" alt="GitHub Commit Lab Logo" width="150">
 
-> 🎯 Built for learning, fun, and open-source experimentation.
+### Turn Your GitHub Contribution Graph Into Art 🎨
 
+Create custom text, logos, patterns, and pixel-art designs directly on your GitHub contribution graph using automated commits.
 
-## ✨ What Does This Project Do?
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![GitHub Stars](https://img.shields.io/github/stars/susantedit/Github-contribute-graph?style=social)]()
 
-#### 🕰️Act as a Time Machine for Your GitHub Graph
+</div>
 
-Think of this project as a **time machine** 🚀 for your GitHub contribution graph.
+---
 
-We all have moments where:
-- We were inactive for months
-- Made mistakes
-- Forgot to push code
-- Or simply didn’t know GitHub well enough
+## ✨ Overview
 
-This tool lets you **travel back in time** and visualize patterns on your contribution graph by converting a generated `pattern.json` into **real commits with past dates**.
+GitHub Commit Lab is a Python-powered tool that converts a simple `pattern.json` file into real Git commits with historical timestamps.
 
-It doesn’t change who you are —  
-it just helps you **experiment, learn, and have fun** with how GitHub graphs work.
+These commits are pushed to GitHub and displayed naturally on your contribution graph, allowing you to create:
 
-> ✨ Wash away old gaps, explore commit history mechanics, and create something visually cool — responsibly.
+* ✍️ Text
+* 🎨 Pixel Art
+* ❤️ Custom Designs
+* 🚀 Logos
+* 🔥 Creative GitHub Profiles
 
+No image manipulation.
 
-## 🖼 Example Output
-Here’s what a generated pattern looks like on a GitHub profile:
+No browser tricks.
+
+Just real commits displayed by GitHub itself.
+
+---
+
+## 🕰️ A Time Machine For Your GitHub Graph
+
+Think of this project as a visual time machine.
+
+Many developers:
+
+* Took long breaks
+* Created GitHub accounts late
+* Learned Git after months or years
+* Want to understand how contribution graphs work
+
+GitHub Commit Lab lets you explore how commit history affects contribution visualization by generating commits on specific dates.
+
+It is designed for:
+
+✅ Learning
+
+✅ Experimentation
+
+✅ Open Source Fun
+
+✅ Git Internals Exploration
+
+Not for misleading others about your development experience.
+
+---
+
+## 🖼️ Example Result
+
+### Before & After
 
 ![Contribution Graph Example](assets/patternBeforeAfter.png)
 
+---
 
+## ⚡ Features
 
-## 🧠 How It Works (Simple Explanation)
+* 🎨 Design custom contribution artwork
+* 📅 Generate commits for historical dates
+* 🚀 Push directly to GitHub
+* 🧠 Uses simple JSON pattern files
+* 🔥 Supports letters, shapes and logos
+* 💻 Cross-platform (Windows, Linux, macOS)
+* 🆓 Open Source
 
-GitHub contribution graph is:
-- **7 rows** → days of the week  
-- **52 columns** → weeks in a year  
+---
 
-This script:
-1. Reads your pattern grid  
-2. Converts active cells into commit dates  
-3. Creates commits using Git  
-4. GitHub shows them as green dots  
+## 🧠 How GitHub Contribution Graph Works
 
-No fake rendering — **real commits, real graph**.
+GitHub contribution graphs contain:
 
+| Dimension  | Meaning       |
+| ---------- | ------------- |
+| 7 Rows     | Days of Week  |
+| 52 Columns | Weeks in Year |
 
-## 🚀 How To Use
+Each green square represents activity on a specific day.
 
+This project:
 
-### 1️⃣ Generate `pattern.json`
+1. Reads your pattern
+2. Finds active pixels
+3. Maps them to dates
+4. Generates commits
+5. Pushes them to GitHub
 
-This script **requires a pattern file**.
+GitHub automatically renders the final artwork.
 
-You can generate it using my pattern generator website or from my repository:
+---
 
- 🌐 **GitHub Pattern Generator**  
-👉 https://susantedit.github.io/GITHUB-PATTERN-DESIGNER/
+# 🚀 Getting Started
 
+## Step 1 — Generate Pattern File
 
-Steps:
-- Open the website  
-- Design your text or pattern  
-- Download `pattern.json`  
-- Place it in this repository by replacing old "pattern.json" 
+Create a design using the visual pattern editor:
 
+🌐 https://susantedit.github.io/GITHUB-PATTERN-DESIGNER/
 
-
-
-## 2️⃣ Create a New GitHub Repository
-
-- Create a **new public repository** on GitHub
-- This repository will be used to generate contribution commits
-- Prefer using an **empty repo**
-
-Clone it locally:
-
-```bash
-git clone <your-new-repo-url>
-cd <your-new-repo-name>
-```
-
-
-## 3️⃣ Clone the Tool Repository (Temporary)
-
-Clone the tool repository to get the required script files:
-
-```bash
-git clone https://github.com/aurafarmerone/github-contribution-graph-hack.git
-```
-
-This repository contains:
-
-* Commit generation script
-* Supporting files
-
-
-## 4️⃣ Move Required Files Into Your Repo
-
-* Copy the required script files from the cloned tool repository
-* Paste them into **your new repository directory**
-* Ensure the script file is present in the repo root
-
-⚠️ **Important**
-After copying files:
-
-* **Delete the cloned tool repository**
-* This avoids `.git` conflicts and unexpected errors
-
-
-## 5️⃣ Replace `pattern.json`
-
-* Delete the existing `pattern.json`
-* Paste your downloaded `pattern.json`
-* Ensure the filename is exactly:
+Download:
 
 ```text
 pattern.json
 ```
 
+---
 
-## 6️⃣ Push Initial Setup to GitHub
+## Step 2 — Create New Repository
 
-Before running the script, push the setup:
+Create a new GitHub repository.
+
+Recommended:
+
+* Public repository
+* Empty repository
+
+Clone it:
+
+```bash
+git clone <your-repository-url>
+cd <repository-name>
+```
+
+---
+
+## Step 3 — Clone This Tool
+
+```bash
+git clone https://github.com/susantedit/Github-contribute-graph.git
+```
+
+---
+
+## Step 4 — Copy Required Files
+
+Move the following files into your repository:
+
+```text
+script.py
+pattern.json
+requirements.txt
+```
+
+Then delete the cloned tool repository.
+
+This prevents nested Git repositories and `.git` conflicts.
+
+---
+
+## Step 5 — Replace Pattern
+
+Replace the existing:
+
+```text
+pattern.json
+```
+
+with your downloaded pattern file.
+
+---
+
+## Step 6 — Push Initial Setup
 
 ```bash
 git add .
-git commit -m "Initial setup for contribution pattern"
+git commit -m "Initial setup"
 git push origin main
 ```
 
+---
 
-## 7️⃣ Run the Script
-
-Run the script:
+## Step 7 — Run Script
 
 ```bash
 python script.py
 ```
 
-When prompted, enter the year:
+Example:
 
 ```text
-Enter year to draw pattern: 2023
+Enter year to draw pattern: 2025
 ```
 
-This will:
+The script will:
 
-* Generate real commits
-* Assign past dates
-* Encode your pattern into the GitHub contribution graph
+* Generate commits
+* Assign historical timestamps
+* Build your contribution artwork
 
-⏳ Execution time depends on pattern size.
+---
 
+## Step 8 — View Your Graph
 
+Visit your GitHub profile.
 
-## 8️⃣ View Result on GitHub 🎉
+Navigate to:
 
-* Open your GitHub profile
-* Scroll to **Contribution Graph**
-* Your custom pattern will appear as green dots
+```text
+Profile → Contributions
+```
 
-⏰ GitHub may take a few minutes to update.
+GitHub may take several minutes to update.
 
+---
 
-## 📺 **Full YouTube Walkthrough** 
-### 🎥 Video Tutorial
+## 📁 Project Structure
 
-[![GitHub Contribution Graph Hack Tutorial](assets/thumbnail.png)](https://youtu.be/OQpGpr-m42s)
+```text
+Github-Contribute-Graph
+│
+├── script.py
+├── pattern.json
+├── requirements.txt
+├── assets
+│   ├── logo.png
+│   └── patternBeforeAfter.png
+│
+└── README.md
+```
 
-👉 Video Link: https://youtu.be/OQpGpr-m42s
+---
 
+## ❓ FAQ
 
+### Is this modifying GitHub directly?
+
+No.
+
+It creates normal Git commits with specific timestamps.
+
+---
+
+### Are these real commits?
+
+Yes.
+
+Every square comes from a real Git commit.
+
+---
+
+### Can I create text?
+
+Yes.
+
+The pattern generator supports text and custom pixel designs.
+
+---
+
+### Is this allowed?
+
+GitHub allows commits with custom timestamps.
+
+However, use the tool responsibly.
+
+---
 
 ## ⚠️ Disclaimer
 
-This project is created **just for fun, learning, and experimentation**.
+This project exists for:
 
-❗ Please do **NOT**:
-- Mislead others using your contribution graph  
-- Claim fake activity during interviews  
-- Use this for unfair advantages  
+* Learning Git internals
+* Exploring contribution graphs
+* Creative experimentation
+* Open-source education
 
-Be honest — skills matter more than graphs.
+Please do NOT:
 
+* Fake professional experience
+* Misrepresent your activity
+* Use contribution graphs as proof of skill
+
+Your projects and code matter far more than green squares.
+
+---
 
 ## 🤝 Contributing
 
-Want to improve this project?
+Contributions are welcome.
 
-Please read **CONTRIBUTING.md** for guidelines on:
-- Reporting issues  
-- Suggesting features  
-- Submitting pull requests  
+You can help by:
 
-All contributions are welcome ❤️
- 
+* Reporting bugs
+* Improving documentation
+* Suggesting features
+* Creating pull requests
+
+Please read:
+
+```text
+CONTRIBUTING.md
+```
+
+before contributing.
+
+---
+
+## ⭐ Support The Project
+
+If you found this project useful:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🛠️ Contribute improvements
+
+Sharing helps the project grow.
+
+---
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute.
+Licensed under the MIT License.
 
+See:
 
+```text
+LICENSE
+```
 
-## ❤️ Credits
+for details.
 
-Made with ❤️ by **Aura Farmer**  
-If you find this project useful, consider giving it a ⭐ on GitHub!
+---
 
+# ❤️ Creator
 
+Made with passion by **Aura Farmer**
+
+### 🌐 Connect With Me
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?logo=youtube\&logoColor=white)](https://www.youtube.com/@developersusant)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github\&logoColor=white)](https://github.com/susantedit)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin\&logoColor=white)](https://linkedin.com/in/kantaraj-luitel)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram\&logoColor=white)](https://instagram.com/susantgamerz)
+[![X](https://img.shields.io/badge/X-000000?logo=x\&logoColor=white)](https://x.com/Susantedit)
+
+---
+
+<div align="center">
+
+### ⭐ If this project helped you, consider starring the repository ⭐
+
+</div>
